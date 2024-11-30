@@ -48,32 +48,35 @@
                 </div> -->
             </div>
             <!-- Error Message -->
-            <div id="no-found-message" class="mt-4 d-none">
+            <div id="no-found-message" class="mt-4" style="display: none;">
+
                 <h3 class="text-warning">No Phone Found. Please try a new search</h3>
             </div>
             <!-- Show All Button -->
             <div id="show-all" class="text-center" onclick="showAllButton()">
-                <div id="btn-show-all" class="btn btn-primary">Show All</div>
+                <div id="btn-show-all" class="btn btn-primary mb-5">Show All</div>
             </div>
         </section>
 
         <!-- modal contents -->
         <section>
-
             <!-- Modal -->
-            <div class="modal fade" id="phoneDetailModal" tabindex="-1" aria-labelledby="phoneDetailModalLabel"
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="phoneDetailModalLabel"></h5>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Phone Details</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div id="phone-details" class="modal-body">
+
+                        <!-- modal body content -->
+                        <div class="modal-body" id="modal-body">
 
                         </div>
+
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
